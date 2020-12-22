@@ -1,0 +1,67 @@
+{
+  "flex-layout.row#deals": {
+    "children": [
+      "flex-layout.col#deals1",
+      "flex-layout.col#deals2",
+      "flex-layout.col#deals3"
+    ],
+    "props": {
+      "blockClass": "deals"
+    }
+  },
+
+  "flex-layout.col#deals1": {
+    "props": {
+      "blockClass": "productos-btn"
+    },
+    "children": ["image#deal1", "rich-text#deal1"]
+  },
+  "image#deal1": {
+    "props": {
+      "src": "assets/productos.png",
+      "maxHeight": "24px"
+    }
+  },
+  "rich-text#deal1": {
+    "props": {
+      "text": "Tus productos tienen garantía",
+      "blockClass": "deals"
+    }
+  },
+  "flex-layout.col#deals2": {
+    "props": {
+      "blockClass": "recibes-btn"
+    },
+    "children": ["image#deal2", "rich-text#deal2"]
+  },
+  "image#deal2": {
+    "props": {
+      "src": "assets/recibes.png",
+      "maxHeight": "24px"
+    }
+  },
+  "rich-text#deal2": {
+    "props": {
+      "text": "Recibes lo que pides",
+      "blockClass": "deals"
+    }
+  },
+  "flex-layout.col#deals3": {
+    "props": {
+      "blockClass": "entregas-btn"
+    },
+    "children": ["image#deal3", "rich-text#deal3"]
+  },
+  "image#deal3": {
+    "props": {
+      "src": "assets/entregas.png",
+      "maxHeight": "24px"
+    }
+  },
+  "rich-text#deal3": {
+    "props": {
+      "text": "Entregas en menos de 24hrs",
+      "blockClass": "deals"
+    }
+  }
+}

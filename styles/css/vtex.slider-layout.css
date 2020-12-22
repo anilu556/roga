@@ -1,0 +1,45 @@
+.sliderLayoutContainer {
+  justify-content: center;
+}
+.sliderLayoutContainer--carousel {
+  background-color: #f0f0f0;
+}
+
+.sliderTrackContainer {
+  max-width: 100%;
+}
+
+.paginationDotsContainer {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: none;
+}
+
+.layoutContainer--shelf {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 96rem;
+}
+
+.slide--shelf {
+  margin-bottom: 25px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+:global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf)
+  :global(.vtex-button) {
+  opacity: 0;
+}
+
+:global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf):hover
+  :global(.vtex-button) {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  :global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf)
+    :global(.vtex-button) {
+    opacity: 1;
+  }
+}

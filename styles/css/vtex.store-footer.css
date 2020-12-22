@@ -1,0 +1,118 @@
+.row--menu-row {
+  padding-right: 24px;
+}
+
+.row--menu-row .rowContainer {
+  align-items: flex-start;
+}
+
+.row--payment-methods {
+  padding-top: 16px;
+}
+
+:global(.vtex-rich-text-0-x-container--footer) {
+  color: #ffffff;
+  background: #000000;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--menu-row) {
+  border-top: 3px solid #2d4b9a;
+  border-bottom: 3px solid #2d4b9a;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--credits)
+  .vtex-store-components-3-x-container {
+  padding: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--payment-methods) {
+  padding: 30px 0;
+}
+
+:global(.vtex-rich-text-0-x-wrapper--footer) {
+  margin: 0 auto;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--payment-methods)
+  :global(.vtex-store-components-3-x-container) {
+  padding: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--bottom-header-mobile) {
+  background: #fff100;
+}
+
+:global(.vtex-menu-2-x-menuContainerNav--footerContact) {
+  padding: 0 15px;
+}
+
+:global(.vtex-menu-2-x-menuContainerNav--footerLinks)
+  :global(.vtex-menu-2-x-styledLinkContainer) {
+  margin: 0;
+}
+
+:global(.vtex-rich-text-0-x-wrapper--footer-title) {
+  color: #2d4b9a;
+  font-weight: 500;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--socialNet) {
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+:global(.vtex-store-components-3-x-imageElementLink--socialIcon) {
+  margin: 0 10px;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--powered-logos) {
+  flex-direction: row;
+}
+@media screen and (max-width: 1024px) {
+  :global(.vtex-flex-layout-0-x-flexRow--payment-methods) {
+    padding: 0;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRowContent--payment-methods) {
+    padding: 0;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexColChild--payment-methods) {
+    margin: 0;
+  }
+
+  :global(.vtex-store-footer-2-x-acceptedPaymentMethodContainer) {
+    margin: 0 30px;
+  }
+
+  :global(.vtex-store-footer-2-x-socialNetworkWrapper) {
+    margin: 0 30px;
+  }
+
+  :global(.vtex-store-components-3-x-buttonContainer) {
+    padding-top: 0;
+  }
+
+  :global(.vtex-store-components-3-x-container) {
+    padding: 0;
+  }
+
+  :global(.vtex-rich-text-0-x-paragraph--footer) {
+    text-align: center !important;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRowContent--footerRow1) {
+    border-top: 2px solid #2d4b9a;
+    border-bottom: 2px solid #2d4b9a;
+    margin-bottom: 15px;
+  }
+
+  :global(.vtex-menu-2-x-menuItemInnerDiv) {
+    border-bottom: 1px solid #2d4b9a;
+  }
+
+  :global(.vtex-menu-2-x-menuItem):last-child
+    :global(.vtex-menu-2-x-menuItemInnerDiv) {
+    border: none;
+  }
+}

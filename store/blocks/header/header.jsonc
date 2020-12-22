@@ -1,0 +1,256 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#1-desktop",
+      "sticky-layout#4-desktop",
+      "flex-layout.row#2-desktop",
+      "flex-layout.row#3-desktop"
+    ]
+  },
+
+  "flex-layout.row#1-desktop": {
+    "children": ["notification.bar#home"],
+    "props": {
+      "fullWidth": "true"
+    }
+  },
+  "notification.bar#home": {
+    "props": {
+      "content": "Envíos Gratis en Productos Seleccionados"
+    }
+  },
+
+  "sticky-layout#4-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#4-desktop"]
+  },
+  "flex-layout.row#4-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "verticalAlign": "center",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#spacer",
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer2",
+      "login",
+      "flex-layout.col#favs",
+      "minicart.v2"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "blockClass": "space-hd"
+    }
+  },
+  "flex-layout.col#spacer2": {
+    "props": {
+      "blockClass": "space-hd2"
+    }
+  },
+  "flex-layout.col#favs": {
+    "props": {
+      "blockClass": "favsBtn"
+    },
+    "children": ["image#iconFav"]
+  },
+  "image#iconFav": {
+    "props": {
+      "src": "https://rogamx.vteximg.com.br/arquivos/like.png",
+      "link": "/wishlist",
+      "blockClass": "fav-img",
+      "maxHeight": "18px"
+    }
+  },
+  // "rich-text#textFav": {
+  //   "props": {
+  //     "text": "MIS FAVORITOS",
+  //     "blockClass": "fav-text"
+  //   }
+  // },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#desktop"]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://rogamx.vteximg.com.br/arquivos/logospar.png",
+      "width": "500"
+    }
+  },
+  "flex-layout.row#2-desktop": {
+    "props": {
+      "blockClass": "bottom-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#spacer3",
+      "search-bar",
+      "flex-layout.col#call-btn1",
+      "flex-layout.col#call-btn2"
+    ]
+  },
+  "flex-layout.col#spacer3": {
+    "props": {
+      "blockClass": "space-hb"
+    }
+  },
+  "search-bar": {
+    "props": {
+      "blockClass": "buscador"
+    }
+  },
+  "flex-layout.col#call-btn1": {
+    "props": {
+      "blockClass": "callBtn1"
+    },
+    "children": ["image#sucursales"]
+  },
+  "image#sucursales": {
+    "props": {
+      "src": "https://rogamx.vteximg.com.br/arquivos/btnsuc.png",
+      "link": "/",
+      "blockClass": "suc-img",
+      "maxHeight": "30px"
+    }
+  },
+  "flex-layout.col#call-btn2": {
+    "props": {
+      "blockClass": "callBtn2"
+    },
+    "children": ["image#whatsapp"]
+  },
+  "image#whatsapp": {
+    "props": {
+      "src": "https://rogamx.vteximg.com.br/arquivos/btnwhats.png",
+      "link": "/",
+      "blockClass": "whats-img",
+      "maxHeight": "30px"
+    }
+  },
+  "flex-layout.row#3-desktop": {
+    "props": {
+      "blockClass": "menu-header",
+      "horizontalAlign": "left",
+      "verticalAlign": "center",
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#category-menu", "flex-layout.col#info-menu"]
+  },
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "cat-menu",
+      "width": "70%"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"]
+  },
+  "flex-layout.col#info-menu": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "info-menu",
+      "width": "30%"
+    },
+    "children": ["vtex.menu@2.x:menu#info-menu"]
+  },
+  "header-layout.mobile": {
+    "children": [
+      "flex-layout.row#notification-mobile",
+      "sticky-layout#1-mobile",
+      "flex-layout.row#2-mobile"
+    ]
+  },
+  "flex-layout.row#notification-mobile": {
+    "children": ["notification.bar#homeMob"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "notification.bar#homeMob": {
+    "props": {
+      "content": "Envíos Gratis en Productos Seleccionados"
+    }
+  },
+  "sticky-layout#1-mobile": {
+    "children": ["flex-layout.row#1-mobile"]
+  },
+  "flex-layout.row#1-mobile": {
+    "children": ["logo#mobile", "login", "minicart.v2"],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#2-mobile": {
+    "props": {
+      "blockClass": "bottom-header-mobile",
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#hamb", "flex-layout.col#buscmob"]
+  },
+  "flex-layout.col#hamb": {
+    "props": {
+      "blockClass": "btnHamb",
+      "width": "10%"
+    },
+    "children": ["drawer"]
+  },
+  "drawer": {
+    "children": ["menu#drawer"]
+  },
+  "menu#drawer": {
+    "children": [
+      "menu-item#more",
+      "menu-item#category-home",
+      "menu-item#category-home2",
+      "menu-item#category-home3"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "flex-layout.col#buscmob": {
+    "props": {
+      "blockClass": "buscadorMob",
+      "width": "88%"
+    },
+    "children": ["search-bar#mobile"]
+  },
+  "search-bar#mobile": {
+    "props": {
+      "blockClass": "buscador-mob"
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://rogamx.vteximg.com.br/arquivos/logospar.png",
+      "width": "283"
+    }
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#more",
+      "menu-item#category-home",
+      "menu-item#category-home2",
+      "menu-item#category-home3"
+    ]
+  },
+  "menu-item#more": {
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Productos",
+        "text": "Productos"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#more"]
+  },
+  "vtex.menu@2.x:submenu#more": {
+    "props": {
+      "width": "100%"
+    },
+    "children": ["flex-layout.row#menu-more"]
+  },
+  "flex-layout.row#menu-more": {
+    "children": ["flex-layout.col#menu-more-1", "flex-layout.col#menu-more-2"]
+  },
+  "flex-layout.col#menu-more-1": {
+    "children": ["vtex.menu@2.x:menu#more"]
+  },
+  "flex-layout.col#menu-more-2": {
+    "children": ["info-card#Menu"]
+  },
+  "info-card#Menu": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://rogamx.vteximg.com.br/arquivos/banpair1-villareal.png",
+      "headline": "Ofertas",
+      "callToActionText": "Ver más",
+      "callToActionUrl": "/",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+  "vtex.menu@2.x:menu#more": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["menu-item#about-us", "menu-item#faq"]
+  },
+  "menu-item#about-us": {
+    "props": {
+      "id": "menu-item-about-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "About us",
+        "text": "About us"
+      }
+    }
+  },
+  "menu-item#faq": {
+    "props": {
+      "id": "menu-item-faq",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "FAQ",
+        "text": "FAQ"
+      }
+    }
+  },
+  "menu-item#contact-us": {
+    "props": {
+      "id": "menu-item-contact-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Contact Us",
+        "text": "Contact Us"
+      }
+    }
+  },
+  "menu-item#category-home": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Promociones",
+        "text": "Promociones"
+      }
+    }
+  },
+  "menu-item#category-home2": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Cupones",
+        "text": "Cupones"
+      }
+    }
+  },
+  "menu-item#category-home3": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "¿Cómo comprar?",
+        "text": "¿Cómo comprar?"
+      }
+    }
+  }
+}

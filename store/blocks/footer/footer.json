@@ -1,0 +1,160 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-2-desktop",
+      "flex-layout.row#footer-3-desktop"
+    ]
+  },
+  "flex-layout.row#footer-1-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#Products",
+      "vtex.menu@2.x:menu#footer-decoration",
+      "vtex.menu@2.x:menu#footer-bags",
+      "vtex.menu@2.x:menu#footer-clothing",
+      "newsletter"
+    ],
+    "props": {
+      "blockClass": "menu-row",
+      "paddingTop": 6,
+      "paddingBottom": 3
+    }
+  },
+
+  "flex-layout.row#footer-2-desktop": {
+    "children": [
+      "accepted-payment-methods",
+      "flex-layout.col#social",
+      "flex-layout.col#powered-logos"
+    ],
+    "props": {
+      "blockClass": "footer-top"
+    }
+  },
+  "flex-layout.col#social": {
+    "props": {
+      "blockClass": "socialNet"
+    },
+    "children": ["image#1", "image#2", "image#3", "image#4"]
+  },
+
+  "image#1": {
+    "props": {
+      "src": "https://rogamx.vteximg.com.br/arquivos/red-face.png",
+      "link": "/",
+      "maxHeight": "30px",
+      "blockClass": "socialIcon"
+    }
+  },
+  "image#2": {
+    "props": {
+      "src": "https://rogamx.vteximg.com.br/arquivos/red-you.png",
+      "link": "/",
+      "maxHeight": "30px",
+      "blockClass": "socialIcon"
+    }
+  },
+  "image#3": {
+    "props": {
+      "src": "https://rogamx.vteximg.com.br/arquivos/red-insta.png",
+      "link": "/",
+      "maxHeight": "30px",
+      "blockClass": "socialIcon"
+    }
+  },
+  "image#4": {
+    "props": {
+      "src": "https://rogamx.vteximg.com.br/arquivos/red-linked.png",
+      "link": "/",
+      "maxHeight": "30px",
+      "blockClass": "socialIcon"
+    }
+  },
+  "accepted-payment-methods": {
+    "props": {
+      "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
+    }
+  },
+  "flex-layout.col#powered-logos": {
+    "props": {
+      "blockClass": "powered-logos"
+    },
+    "children": ["image#puntoCommerce", "image#vtex"]
+  },
+  "image#puntoCommerce": {
+    "props": {
+      "src": "https://rogamx.vteximg.com.br/arquivos/poweredPC-ok.png",
+      "link": "https://puntocommerce.com/",
+      "blockClass": "pc-img",
+      "maxHeight": "56px"
+    }
+  },
+  "image#vtex": {
+    "props": {
+      "src": "https://rogamx.vteximg.com.br/arquivos/poweredVtex-ok.png",
+      "link": "https://vtex.io/",
+      "blockClass": "vtex-img",
+      "maxHeight": "56px"
+    }
+  },
+  "flex-layout.row#footer-3-desktop": {
+    "children": ["rich-text#footer"],
+    "props": {
+      "blockClass": "credits",
+      "fullWidth": true
+    }
+  },
+  "rich-text#footer": {
+    "props": {
+      "text": "Políticas de privacidad | Términos y condiciones | Privacidad",
+      "textAlignment": "CENTER",
+      "blockClass": "footer"
+    }
+  },
+
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#1-footer-mobile",
+      "flex-layout.row#2-footer-mobile"
+    ]
+  },
+  "flex-layout.row#1-footer-mobile": {
+    "props": {
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "blockClass": "footerRow1"
+    },
+    "children": ["vtex.menu@2.x:menu#footer-mobile"]
+  },
+  "flex-layout.row#2-footer-mobile": {
+    "children": ["flex-layout.col#footer-1-mobile"],
+    "props": {
+      "blockClass": "payment-methods",
+      "paddingTop": 4,
+      "paddingBottom": 4
+    }
+  },
+  "flex-layout.col#footer-1-mobile": {
+    "children": [
+      "newsletter",
+      "accepted-payment-methods",
+      "social-networks",
+      "rich-text#footer-mobile"
+    ],
+    "props": {
+      "blockClass": "payment-methods",
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "rowGap": 4
+    }
+  },
+  "rich-text#footer-mobile": {
+    "props": {
+      "text": "Políticas de privacidad | Términos y condiciones | Privacidad",
+      "blockClass": "footer"
+    }
+  }
+}

@@ -1,0 +1,363 @@
+{
+  "vtex.menu@2.x:menu#Products": {
+    "props": {
+      "orientation": "vertical",
+      "width": "20%",
+      "blockClass": "footerContact"
+    },
+    "children": [
+      "rich-text#title1",
+      "rich-text#location",
+      "rich-text#mail",
+      "rich-text#phone"
+    ]
+  },
+  "rich-text#title1": {
+    "props": {
+      "text": "Contáctanos",
+      "blockClass": "footer-title",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#location": {
+    "props": {
+      "text": "Av. Principal 123, Col. Alameda, c.p. 12345, Chihuahua,Chihuahua",
+      "blockClass": "footer-location"
+    }
+  },
+  "rich-text#mail": {
+    "props": {
+      "text": "atencioncliente@mail.com",
+      "blockClass": "footer-mail"
+    }
+  },
+  "rich-text#phone": {
+    "props": {
+      "text": "00 0000-0000",
+      "blockClass": "footer-phone"
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-decoration": {
+    "props": {
+      "orientation": "vertical",
+      "width": "12%",
+      "blockClass": "footerLinks"
+    },
+    "children": [
+      "rich-text#title2",
+      "menu-item#smartphones",
+      "menu-item#videogames",
+      "menu-item#tvs"
+    ]
+  },
+  "rich-text#title2": {
+    "props": {
+      "text": "Información",
+      "blockClass": "footer-title"
+    }
+  },
+  "menu-item#smartphones": {
+    "props": {
+      "id": "menu-item-creditos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Créditos",
+        "text": "Créditos"
+      }
+    }
+  },
+
+  "menu-item#videogames": {
+    "props": {
+      "id": "menu-item-planes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Planes de venta",
+        "text": "Planes de venta"
+      }
+    }
+  },
+
+  "menu-item#tvs": {
+    "props": {
+      "id": "menu-item-catalogos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Catálogos",
+        "text": "Catálogos"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-bags": {
+    "props": {
+      "orientation": "vertical",
+      "width": "18%",
+      "blockClass": "footerLinks"
+    },
+    "children": [
+      "rich-text#title3",
+      "menu-item#bags",
+      "menu-item#backpacks",
+      "menu-item#necessaire",
+      "menu-item#devoluciones"
+    ]
+  },
+  "rich-text#title3": {
+    "props": {
+      "text": "Pedidos",
+      "blockClass": "footer-title"
+    }
+  },
+  "menu-item#bags": {
+    "props": {
+      "id": "menu-item-tiempos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Tiempos de entrega",
+        "text": "Tiempos de entrega"
+      }
+    }
+  },
+
+  "menu-item#backpacks": {
+    "props": {
+      "id": "menu-item-envios",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Envíos y devoluciones",
+        "text": "Envíos y devoluciones"
+      }
+    }
+  },
+  "menu-item#necessaire": {
+    "props": {
+      "id": "menu-item-pedidos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "¿Cómo rastrear mi pedido?",
+        "text": "¿Cómo rastrear mi pedido?"
+      }
+    }
+  },
+  "menu-item#devoluciones": {
+    "props": {
+      "id": "menu-item-devoluciones",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Devoluciones y reembolsos",
+        "text": "Devoluciones y reembolsos"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#footer-clothing": {
+    "props": {
+      "orientation": "vertical",
+      "width": "15%",
+      "blockClass": "footerLinks"
+    },
+    "children": [
+      "rich-text#title4",
+      "menu-item#clothing",
+      "menu-item#shorts",
+      "menu-item#tank-tops"
+    ]
+  },
+  "rich-text#title4": {
+    "props": {
+      "text": "Preguntas frecuentes",
+      "blockClass": "footer-title"
+    }
+  },
+  "menu-item#clothing": {
+    "props": {
+      "id": "menu-item-category-instalacion",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Instalación",
+        "text": "Instalación"
+      }
+    }
+  },
+
+  "menu-item#shorts": {
+    "props": {
+      "id": "menu-item-mantenimiento",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Mantenimiento",
+        "text": "Mantenimiento"
+      }
+    }
+  },
+
+  "menu-item#tank-tops": {
+    "props": {
+      "id": "menu-item-tank-garantias",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Garantías",
+        "text": "Garantías"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#contacr-mobile",
+      "menu-item#sale-mobile",
+      "menu-item#decoration-mobile",
+      "menu-item#clothing-mobile"
+    ]
+  },
+  "menu-item#contacr-mobile": {
+    "props": {
+      "itemProps": {
+        "tagTitle": "Contáctanos",
+        "text": "Contáctanos"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#contact"]
+  },
+  "vtex.menu@2.x:submenu.accordion#contact": {
+    "children": ["vtex.menu@2.x:menu#footer-contact-mobile"]
+  },
+  "vtex.menu@2.x:menu#footer-contact-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["rich-text#location", "rich-text#mail", "rich-text#phone"]
+  },
+  "menu-item#sale-mobile": {
+    "props": {
+      "itemProps": {
+        "tagTitle": "Información",
+        "text": "Información"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#sale"]
+  },
+  "vtex.menu@2.x:submenu.accordion#sale": {
+    "children": ["vtex.menu@2.x:menu#footer-sale-mobile"]
+  },
+
+  "vtex.menu@2.x:menu#footer-sale-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#smartphones",
+      "menu-item#videogames",
+      "menu-item#tvs"
+    ]
+  },
+
+  "menu-item#decoration-mobile": {
+    "props": {
+      "itemProps": {
+        "tagTitle": "Pedidos",
+        "text": "Pedidos"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#decoration"]
+  },
+  "vtex.menu@2.x:submenu.accordion#decoration": {
+    "children": ["vtex.menu@2.x:menu#footer-decoration-mobile"]
+  },
+
+  "vtex.menu@2.x:menu#footer-decoration-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#bags",
+      "menu-item#backpacks",
+      "menu-item#necessaire",
+      "menu-item#devoluciones"
+    ]
+  },
+  "menu-item#clothing-mobile": {
+    "props": {
+      "id": "menu-item-category-preguntas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Preguntas frecuentes",
+        "text": "Preguntas frecuentes"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
+  },
+  "vtex.menu@2.x:submenu.accordion#clothing": {
+    "children": ["vtex.menu@2.x:menu#clothing-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#clothing-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#clothing",
+      "menu-item#shorts",
+      "menu-item#tank-tops"
+    ]
+  }
+}

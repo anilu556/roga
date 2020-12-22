@@ -1,0 +1,201 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#demo",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#categories",
+      "rich-text#shelf-title",
+      "rich-text#subtitle-text",
+      "flex-layout.row#shelf",
+      "flex-layout.row#bannerFull",
+      "flex-layout.row#bannerPair",
+      "flex-layout.row#deals",
+      "back-to-top-button"
+    ]
+  },
+  "back-to-top-button": {
+    "props": {
+      "displayThreshold": 600,
+      "display": "caret-icon"
+    }
+  },
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "https://rogamx.vteximg.com.br/arquivos/principal-villareal.png",
+          "mobileImage": "https://rogamx.vteximg.com.br/arquivos/principal-res.png"
+        },
+        {
+          "image": "https://rogamx.vteximg.com.br/arquivos/principal-villareal.png",
+          "mobileImage": "https://rogamx.vteximg.com.br/arquivos/principal-res.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+
+  "flex-layout.row#categories": {
+    "children": [
+      "flex-layout.col#cat1",
+      "flex-layout.col#cat2",
+      "flex-layout.col#cat3",
+      "flex-layout.col#cat4",
+      "flex-layout.col#cat5"
+    ],
+    "props": {
+      "blockClass": "categories",
+      "horizontalAlign": "center",
+      "fullWidth": false
+    }
+  },
+  "flex-layout.col#cat1": {
+    "children": ["image#cat1"]
+  },
+  "image#cat1": {
+    "props": {
+      "src": "https://rogamx.vteximg.com.br/arquivos/cat-recamaras.png",
+      "link": "/",
+      "blockClass": "catImages"
+    }
+  },
+  "flex-layout.col#cat2": {
+    "children": ["image#cat2"]
+  },
+  "image#cat2": {
+    "props": {
+      "src": "https://rogamx.vteximg.com.br/arquivos/cat-blanca.png",
+      "link": "/",
+      "blockClass": "catImages"
+    }
+  },
+  "flex-layout.col#cat3": {
+    "children": ["image#cat3"]
+  },
+  "image#cat3": {
+    "props": {
+      "src": "https://rogamx.vteximg.com.br/arquivos/cat-salas.png",
+      "link": "/",
+      "blockClass": "catImages"
+    }
+  },
+  "flex-layout.col#cat4": {
+    "children": ["image#cat4"]
+  },
+  "image#cat4": {
+    "props": {
+      "src": "https://rogamx.vteximg.com.br/arquivos/cat-electronica.png",
+      "link": "/",
+      "blockClass": "catImages"
+    }
+  },
+  "flex-layout.col#cat5": {
+    "children": ["image#cat5"]
+  },
+  "image#cat5": {
+    "props": {
+      "src": "https://rogamx.vteximg.com.br/arquivos/cat-articulos.png",
+      "link": "/",
+      "blockClass": "catImages"
+    }
+  },
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "¡Promociones de la semana!",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#subtitle-text": {
+    "props": {
+      "text": "Hogar y línea blanca",
+      "blockClass": "sub-text"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+
+  "flex-layout.row#bannerFull": {
+    "children": ["flex-layout.col#bannerFull1"],
+    "props": {
+      "blockClass": "full-banner"
+    }
+  },
+  "flex-layout.col#bannerFull1": {
+    "children": ["image#banner1"]
+  },
+  "image#banner1": {
+    "props": {
+      "src": "https://rogamx.vteximg.com.br/arquivos/banfull-villareal.png",
+      "link": "/",
+      "blockClass": "bannerFull-img"
+    }
+  },
+  "flex-layout.row#bannerPair": {
+    "children": ["flex-layout.col#bannerPair1", "flex-layout.col#bannerPair2"],
+    "props": {
+      "blockClass": "pair-banner"
+    }
+  },
+  "flex-layout.col#bannerPair1": {
+    "children": ["image#banPa1"],
+    "props": {
+      "blockClass": "pair-banner1"
+    }
+  },
+  "image#banPa1": {
+    "props": {
+      "src": "https://rogamx.vteximg.com.br/arquivos/banpair1-villareal.png",
+      "link": "/",
+      "blockClass": "bannerPair-img1"
+    }
+  },
+  "flex-layout.col#bannerPair2": {
+    "children": ["image#banPa2"],
+    "props": {
+      "blockClass": "pair-banner2"
+    }
+  },
+  "image#banPa2": {
+    "props": {
+      "src": "https://rogamx.vteximg.com.br/arquivos/banpair2.png",
+      "link": "/",
+      "blockClass": "bannerPair-img2"
+    }
+  }
+}

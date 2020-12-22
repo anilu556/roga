@@ -1,0 +1,218 @@
+.notificationBarContainer {
+  background-color: #e6f1e6;
+  color: #03034e;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: underline;
+}
+.autoCompleteOuterContainer--buscador {
+  width: 700px;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+  max-width: 100%;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--bottom-header)
+  .vtex-input-prefix__group {
+  border: none;
+}
+
+.infoCardContainer--info-card-home {
+  max-width: 1520px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.newsletter {
+  max-width: 1528px;
+  margin: 0 auto;
+}
+
+.newsletter .container {
+  padding: 0 40px;
+}
+
+.label {
+  color: #000;
+  font-size: 26px;
+}
+
+.inputGroup {
+  padding-bottom: 4px;
+  display: flex;
+  color: #000;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
+  background-color: #dbdbdb;
+  padding: 0 40px;
+  border: none;
+  border-radius: 0 !important;
+}
+
+:global(.vtex-store-components-3-x-inputGroup) :global(.vtex-button) {
+  background-color: #da1f28;
+  border: none;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+:global(.vtex-store-components-3-x-newsletter)
+  :global(.vtex-input-prefix__group) {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--productos-btn):hover,
+:global(.vtex-flex-layout-0-x-flexCol--recibes-btn):hover,
+:global(.vtex-flex-layout-0-x-flexCol--entregas-btn):hover {
+  border-bottom: 1px solid #da1f28;
+  cursor: pointer;
+}
+
+:global(.vtex-store-components-3-x-buttonContainer) {
+  padding-left: 0;
+}
+
+.label {
+  font-size: 16px;
+  color: #2d4b9a;
+}
+
+.infoCardContainer--info-card-home .infoCardTextContainer {
+  width: 30%;
+}
+
+.infoCardContainer--info-card-home .infoCardImageContainer {
+  width: 100%;
+}
+
+.imageElement--storePrint {
+  margin-bottom: 0px;
+  max-height: 600px;
+}
+
+.productImagesContainer--quickview .carouselContainer {
+  justify-content: flex-start;
+}
+
+.productImagesContainer--quickview .productImageTag {
+  object-fit: cover !important;
+}
+
+.productImagesContainer--quickview .carouselGaleryThumbs {
+  display: none;
+}
+
+.productImagesContainer--quickview .carouselGaleryCursor {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.productNameContainer {
+  color: #3f3f40;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--categories) {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+:global(.vtex-store-components-3-x-imageElement--catImages) {
+  display: block;
+  margin: 10px auto;
+  opacity: 1;
+}
+
+:global(.vtex-store-components-3-x-imageElement--catImages):hover {
+  opacity: 0.6;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--shelfTitle) {
+  font-size: 36px;
+  color: #000000;
+  font-weight: 500;
+  margin: 5px 0;
+  font-family: "GothamBold";
+}
+
+:global(.vtex-rich-text-0-x-wrapper--sub-text) {
+  margin: 0 auto;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--sub-text) {
+  font-size: 24px;
+  color: #000000;
+  font-weight: 500;
+  margin: 0;
+}
+
+:global(.vtex-slider-layout-0-x-caretIcon--carousel) {
+  background: rgb(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+:global(.vtex-slider-layout-0-x-caretIcon--shelf) {
+  background: rgb(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid #2d4b9a;
+  color: #2d4b9a;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--full-banner)
+  :global(.vtex-store-components-3-x-container),
+:global(.vtex-flex-layout-0-x-flexRow--pair-banner)
+  :global(.vtex-store-components-3-x-container) {
+  padding: 0 15px;
+}
+
+:global(.vtex-store-components-3-x-imageElement--bannerFull-img),
+:global(.vtex-store-components-3-x-imageElement--bannerPair-img1),
+:global(.vtex-store-components-3-x-imageElement--bannerPair-img2) {
+  width: 100%;
+  margin-bottom: 15px;
+  opacity: 1;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--pair-banner1) {
+  margin-right: 7.5px;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--pair-banner2) {
+  margin-left: 7.5px;
+}
+
+:global(.vtex-store-components-3-x-imageElement--bannerFull-img):hover,
+:global(.vtex-store-components-3-x-imageElement--bannerPair-img1):hover,
+:global(.vtex-store-components-3-x-imageElement--bannerPair-img2):hover {
+  opacity: 0.6;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--categories)
+  :global(.vtex-flex-layout-0-x-flexColChild) {
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  :global(.vtex-store-components-3-x-searchBarInnerContainer--buscador-mob) {
+    margin: 0 auto;
+  }
+  :global(.vtex-flex-layout-0-x-flexColChild--pair-banner1) {
+    margin-right: 0;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexCol--pair-banner2) {
+    margin-left: 0;
+  }
+
+  :global(.vtex-store-components-3-x-imageElement--catImages) {
+    margin: 20px auto;
+  }
+}
